@@ -1,5 +1,4 @@
 from tkinter import *
-from turtle import window_width
 
 FONTS = ("Arial", 12)
 

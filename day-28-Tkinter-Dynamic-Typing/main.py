@@ -1,8 +1,5 @@
-from cgitb import text
-from ctypes.wintypes import PLARGE_INTEGER
-from email.mime import image
 from tkinter import *
-from turtle import color
+
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
