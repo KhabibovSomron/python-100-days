@@ -7,8 +7,15 @@ words = {row.letter: row.code for (index, row) in data.iterrows()}
 
 
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
+def generate_phonetic():
+    sentence = input("Input your name: ")
 
-sentence = input("Input your name: ")
+    try:
+        result = [words[letter.upper()] for letter in sentence]
+    except KeyError:
+        print("Sorry, only letters in the alphabet please.")
+        generate_phonetic()
+    else:
+        print(result)
 
-result = [words[letter.upper()] for letter in sentence]
-print(result)
+generate_phonetic()
