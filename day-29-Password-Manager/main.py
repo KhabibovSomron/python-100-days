@@ -50,7 +50,7 @@ def save_data():
         try:
             with open("data.json", "r") as file:
                 data = json.load(file)
-        except FileNotFoundError:
+        except:
             with open("data.json", "w") as file:
                 json.dump(new_data, file, indent=4)
         else:
